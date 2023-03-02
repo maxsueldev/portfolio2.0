@@ -21,7 +21,7 @@ h2 {
 
 h3 {
     font-size: 20px;
-    line-height: 25px;
+    line-height: 0px;
 }
 
 .anim-typewriter {
@@ -149,8 +149,15 @@ hr.sb {
 .intro-container {
     display: flex;
     flex-direction: column;
-    align-content: center;
+    /* align-content: center; */
     flex-wrap: wrap;
+    line-height: 100px;
+    padding-top: 80px;
+}
+
+.intro-efect {
+    display: flex;
+    flex-direction: column;
 }
     
 .content-intro {
@@ -161,13 +168,17 @@ hr.sb {
     padding-top: 17px;
 }
 
+.content-intro h1 {
+    line-height: 46px;
+}
+
 .content-intro h3 {
     color:rgba(255, 255, 255, .75);
-    margin: 20px auto;
+    margin: 14px auto;
     border-right: 2px solid rgba(255, 255, 255, .75);
-    white-space: nowrap;
+    /* white-space: nowrap;
     overflow: hidden;
-    transform: translateY(-50%);
+    transform: translateY(-50%); */
 }
 
 .anim-typewriter {

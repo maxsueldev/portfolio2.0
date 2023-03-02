@@ -18,9 +18,12 @@
 <body>
 	<section id="intro" class="intro">	
 		<div class="container16 content-intro intro-container">
-			<h1>Maxsuel Fernando</h1>
+			<div>
+				<h1>Maxsuel Fernando</h1>
+			</div>
 			<div class="intro-efect">
-				<h3 class="anim-typewriter">Desenvolvedor Front-End | Analista de Sistemas </span/h3>
+				<h3 class="anim-typewriter">Desenvolvedor Front-End /</h3> 
+				<h3>Analista de Sistemas </h3>
 			</div>
 			<div class="redes-sociais">
 				<a href="https://www.facebook.com/maxsuelfernandob" target="_blank">
@@ -33,7 +36,9 @@
 					<img src="img/redes-sociais/github-logo.png" alt="github-logo" class="social-logo">
 				</a>
 			</div>
-			<a href="#contato" class="call-contato">Entrar em contato</a>
+			<div>
+				<a href="#contato" class="call-contato">Entrar em contato</a>
+			</div>
 		</div>
 		<a class="mouse" href="#sobre">
 			<div class="scroll-downs">
@@ -58,8 +63,10 @@
 			<div class="column13">
 				
 				<h3 class="h3_bold">Maxsuel Fernando</h3>
-				<h3 class="h3_bold"><span>Desenvolvedor Front-end |</span> <span>Analista de Sistemas</span></h3>
-
+					<div class="container-intro-subtitulo">
+						<h3 class="h3_bold">Desenvolvedor Front-end |</h3> <br>89
+						<h3 class="h3_bold">Analista de Sistemas</h3>
+					</div>
 				<div class="texto">
 					<p>Graduado em Sistemas de Informação, com habilidades em Web Design, Desenvolvimento Front-end e Suporte Técnico, venho buscando sempre novos conhecimentos na área, pois, tenho interesse em evoluir profissionalmente, com o objetivo de ascensão profissional.</p>
 				</div>
