@@ -225,9 +225,19 @@ to {
     padding: 30px;
 }
 
-.pjt_reais, .templates {
+.pjt_reais {
+    margin-bottom: 40px;
+}
+
+.pjt_reais, .templates-container {
+    height: 100%;
     display: flex;
     flex-direction: column;
+    text-align: center;
+}
+
+.pjt_reais a, .templates-container a {
+    margin: 8px 0;
 }
 
 .portfolio img {
@@ -235,4 +245,10 @@ to {
     height: 80%;
 }
   
-  
+.portfolio .pjt_title {
+    margin-bottom: 45px;
+}
+
+.portfolio .text-center .templates {
+    margin-top: 45px;
+}
