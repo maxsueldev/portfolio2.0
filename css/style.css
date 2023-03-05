@@ -32,19 +32,19 @@ h3 {
   
 p {
       font-size: 16px;
-      line-height: 20px;
+      line-height: 27px;
 }
 
 hr.separador { 
     height: 1px;
-    margin: 20px 0 45px;
+    margin: 20px 0 30px;
 }
 
-hr.sl {  /* refatorar nome da classe */
+hr.separador-laranja {  /* refatorar nome da classe */
     background-color: #dc4f49;
 }
 
-hr.sb {  /* refatorar nome da classe */
+hr.separador-azul {  /* refatorar nome da classe */
     background-color: #F4F7F6;
 }
 
@@ -180,6 +180,42 @@ to {
     outline-offset: 15px;
 }
 
+.icon_section {
+    margin-right: 6px;
+}
 
+.sobre {
+    padding: 30px;
+}
+
+.sobre-container {
+    display: flex; 
+    flex-direction: column;
+}
+
+.sobre-top {
+    display: flex;
+    align-items: baseline;
+    margin: 24px 0;
+}
+
+.profissao-container {
+    line-height: 22px;
+    margin-bottom: 36px;
+}
+
+.sobre-info-contact {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.sobre .texto {
+    margin-bottom: 20px;
+}
+
+.sobre-info-contact h3 {
+    margin: 12px 0;
+}
   
   
