@@ -78,13 +78,11 @@
 
 	<section class="portfolio">
 		<div class="portfolio-container">
-			<div class="section_head">
-				<div class="sobre-top section_head">
-					<i class="fa fa-code fa-3x icon_section" aria-hidden="true"></i>
-					<h2 class="title_section">Portfólio Web Designer</h2>
-				</div>
-				<h3>Projetos de sites que desenvolvi</h3>
+			<div class="portfolio-top section_head">
+				<i class="fa fa-code fa-3x icon_section" aria-hidden="true"></i>
+				<h2 class="title_section">Portfólio Web Designer</h2>	
 			</div>
+			<h3>Projetos de sites que desenvolvi</h3>
 
 			<hr class="separador separador-azul">
 			
@@ -128,6 +126,46 @@
 			</div>		
 		</div>	
 	</section>
+	<section id="contato" class="contato">
+		<div class="contato-container">
+			<div class="sc_head">
+				<div class="contato-top">
+					<i class="fa fa-envelope fa-3x icon_section" aria-hidden="true"></i>
+					<h2 class="title_section">Contato</h2>
+				</div>
+				<h3>Entre em contato para conversarmos </h3>
+			</div>
+
+			<hr class="separador separador-laranja">
+
+			<form id="form_contato" action="" method="post" name="form" class="formphp form" onsubmit="enviar.disabled=true;">
+				<div>
+					<input type="text" name="nome" placeholder="Nome" required>
+					<input type="email" name="email" placeholder="Email" required>
+				</div>
+				<div>
+					<textarea rows="3" name="mensagem" placeholder="Mensagem" required></textarea>
+				</div>
+				<div class="button-form">
+					<button class="btn direciona" name="enviar" type="submit">Enviar</button>
+				</div>
+			</form>
+		</div>
+	</section>
+
+	<footer class="footer">
+		<div class="footer-container">
+			<a href="https://www.facebook.com/maxsuelfernandob" target="_blank">
+				<img src="img/redes-sociais/facebook-logo.png" alt="facebook-logo" class="social-logo">
+			</a>
+			<a href="https://www.linkedin.com/in/maxsuelfernandob" target="_blank">
+				<img src="img/redes-sociais/linkedin-logo.png" alt="linkedin-logo" class="social-logo">
+			</a>
+			<a href="https://github.com/maxsuelfernandob" target="_blank">
+				<img src="img/redes-sociais/github-logo.png" alt="github-logo" class="social-logo">
+			</a>
+		</div>
+	</footer>
 	
 	<script src="js/libs/jquery-1.9.1.min.js"></script>
 	<script src="js/libs/visibility.js"></script>

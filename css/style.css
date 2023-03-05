@@ -111,6 +111,8 @@ hr.separador-azul {  /* refatorar nome da classe */
     top: 37%}
 }
 
+/*////////////////////////// INTRO //////////////////////////*/
+
 .intro {
     width: 100%;
     height: 100%;
@@ -184,6 +186,8 @@ to {
     margin-right: 6px;
 }
 
+/*////////////////////////// SOBRE //////////////////////////*/
+
 .sobre {
     padding: 30px;
 }
@@ -199,7 +203,7 @@ to {
 }
 
 .section_head {
-    margin: 24px 0;
+    margin: 24px 0; 
 }
 
 .profissao-container {
@@ -221,8 +225,17 @@ to {
     margin: 12px 0;
 }
 
+/*////////////////////////// PORTFOLIO //////////////////////////*/
+
 .portfolio {
+    color: #f4f4f4;
     padding: 30px;
+}
+
+.portfolio-top {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 26px;
 }
 
 .pjt_reais {
@@ -247,4 +260,71 @@ to {
   
 .portfolio .pjt_title {
     margin-bottom: 45px;
+}
+
+/*////////////////////////// CONTATO //////////////////////////*/
+
+.form input, .form textarea {
+    width: 92%;
+    display: block;
+    outline: 0;
+    font-size: 23px;
+    color: #092140;
+    background-color: #F4F7F6;
+    border: 2px solid #dc4f49;
+}
+
+.contato {
+    padding: 30px;
+}
+
+.contato-top {
+    display: flex;
+    align-items: baseline;
+}
+
+.contato .button-form {
+    text-align: center;
+}
+.contato button {
+    cursor: pointer;
+    font-size: 18px;
+    color: #dc4f49;
+    background-color: #F4F7F6;
+    border: 2px solid #dc4f49;
+    border-radius: 16px;
+    padding: 12px 60px;
+    margin: 15px 0 30px 0;
+}
+.contato button:hover {
+    outline-color: rgba(255, 255, 255, 0);
+    outline-offset: 15px;
+}
+
+.sc_head h3 {
+    margin-top: 20px;
+    line-height: 26px;
+}
+
+input, textarea {
+    padding: 16px;
+    margin: 14px 0;
+    border-radius: 10px;
+}
+
+.footer {
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #092140;
+    padding: 20px 0;
+}
+
+.footer img {
+    margin-top: 25/px;
+}
+
+.footer img:hover {
+    background-color: #dc4f49;
 }
