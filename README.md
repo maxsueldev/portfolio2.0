@@ -12,6 +12,7 @@ Meu portfólio com o CSS sendo refatorado para Mobile First e elementos com Flex
 
 ![Print screen mobile portfolio2.0](img/print/mobile/print1.png)
 ![Print screen mobile portfolio2.0](img/print/mobile/print2.png)
+![Print screen mobile portfolio2.0](img/print/mobile/print3.png)
 
 <br>
 
