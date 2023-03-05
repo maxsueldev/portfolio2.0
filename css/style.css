@@ -196,6 +196,9 @@ to {
 .sobre-top {
     display: flex;
     align-items: baseline;
+}
+
+.section_head {
     margin: 24px 0;
 }
 
@@ -216,6 +219,20 @@ to {
 
 .sobre-info-contact h3 {
     margin: 12px 0;
+}
+
+.portfolio {
+    padding: 30px;
+}
+
+.pjt_reais, .templates {
+    display: flex;
+    flex-direction: column;
+}
+
+.portfolio img {
+    width: 80%;
+    height: 80%;
 }
   
   
