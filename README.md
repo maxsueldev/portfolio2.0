@@ -8,7 +8,7 @@ Meu portfólio com o CSS sendo refatorado para Mobile First e elementos com Flex
 
 <br>
 
-### Layout Mobile
+### Layout Mobile First
 
 ![Print screen mobile portfolio2.0](img/print/mobile/print1.png)
 ![Print screen mobile portfolio2.0](img/print/mobile/print2.png)
