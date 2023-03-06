@@ -318,7 +318,7 @@ input, textarea {
     justify-content: center;
     align-items: center;
     background-color: #092140;
-    padding: 20px 0;
+    padding: 40px 0 20px 0;
 }
 
 .footer img {
@@ -327,4 +327,47 @@ input, textarea {
 
 .footer img:hover {
     background-color: #dc4f49;
+}
+
+/*////////////////////////// PARA TABLETS //////////////////////////*/
+
+@media (min-width: 834px) {
+   h1 {
+    font-size: 56px;
+    line-height: 40px;
+   }
+
+   .intro h3 {
+    font-size: 26px;
+  }
+
+  .intro-efect {
+    margin-top: 16px;
+  }
+
+  .sobre, .portfolio, .contato {
+    padding: 46px
+  }
+}
+
+/*////////////////////////// PARA TELAS MAIORES //////////////////////////*/
+
+@media(min-width: 1040px) {
+    .intro h1 {
+        font-size: 72px;
+    }
+
+    .intro h3 {
+        font-size: 26px;
+        line-height: 6px;
+    }
+
+    .intro-efect {
+        margin-top: 42px;
+    }
+
+    .projetos-flex {
+        display: flex;
+        flex-direction: row;
+    }
 }
