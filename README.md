@@ -26,6 +26,13 @@ Meu portfólio com o CSS sendo refatorado para Mobile First e elementos com Flex
 
 <br>
 
+### Layout Telas Maiores
+
+![Print screen mobile portfolio2.0](img/print/telaMaior/print1.png)
+![Print screen mobile portfolio2.0](img/print/telaMaior/print2.png)
+
+<br>
+
 ## Tecnologias utilizadas
 
 ### Front-End
