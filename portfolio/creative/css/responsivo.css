@@ -1,0 +1,558 @@
+/* //////////////////////////////// responsivo.css ///////////////////////////////// */
+
+@media screen and (min-width: 768px) {   /* Efeito hover apenas em telas maiores que 768px */
+    a.direciona:hover {
+      background-color: #FEBF20;
+    }
+
+    .cursos a.direciona:hover {
+      color: #F8F8F8;
+    }
+
+    .header_menu a:hover {
+      color: #FEBF20;
+    }
+
+    .quem_somos .texto div a:hover {
+      background-color: #FEBF20;
+    }
+
+    .fundo_curso:hover {
+      border: 1px solid #FEBF20;
+    }
+
+    .contato button:hover {
+      color: #F8F8F8;
+      background-color: #814B67;
+    }
+
+    .footer .redes_sociais a li:hover {
+      background-color: #FEBF20;
+    }
+}
+
+@media only screen and (min-width: 1161px) and (max-width: 1280px) {
+
+  /* intro */
+  
+  .intro div {
+    padding-top: 17%;
+  }
+
+  /* quem_somos */
+
+  .quem_somos {
+    height: 623px;
+  }
+
+  /* motivacao */
+
+  .motivacao {
+    padding: 60px 95px;
+  }
+}
+
+@media only screen and (min-width: 960px) and (max-width: 1160px) {
+  
+  /* intro */
+
+  .intro {
+    height: 112%;
+  }
+
+  .intro div {
+    padding-top: 18.5%;
+  }
+
+  .intro h1 {
+    font-size: 70px;
+  }
+
+  .intro p {
+    font-size: 45px;
+  }
+
+  /* quem_somos */
+
+  .quem_somos {
+    height: 574px;
+  }
+
+  .quem_somos .texto {
+    padding-left: 410px;
+    top: 8px;
+  }
+
+  .quem_somos .texto h3 {
+    font-size: 55px;
+  }
+
+  .quem_somos .texto p {
+    font-size: 27px;
+  }
+
+  .quem_somos .texto div {
+    margin-top: 16px;
+  }
+
+  .girl_quem_somos {
+    top: 66px;
+  }
+
+  .cloud_01_bottom {    
+    bottom: 15%;
+  }
+
+  /* cursos */
+
+  .cursos {
+    padding: 60px 0;
+  }
+
+  .cursos .titulo {
+    font-size: 55px;
+  }
+
+  .cursos .btn_ver_mais {
+    padding-top: 42px;
+  }
+
+  /* motivacao */
+
+  .motivacao {
+    padding: 50px 25px;
+  }
+
+  .motivacao blockquote h2 {
+    font-size: 65px;
+  }
+
+  .motivacao blockquote p {
+    font-size: 31px;
+    padding-top: 27px;
+  }
+
+  /* contato */
+
+  .contato {
+    padding-top: 60px;
+    padding-bottom: 160px;
+  }
+
+  .contato h2 {
+    font-size: 55px;
+    padding-bottom: 15px;
+  }
+
+  .contato p {
+    font-size: 25px;
+    padding: 0 150px;
+  }
+
+  .contato p.second {
+    padding-top: 3px;
+    padding-bottom: 25px;
+  }
+
+  .form input { 
+    border: 2px solid #FEBF20;
+    font-size: 21px;
+  }
+
+  .form textarea {
+    border: 2px solid #FEBF20;
+    padding: 4px 15px;
+    font-size: 21px;
+  }
+
+  /* footer */
+
+  .footer {
+    padding: 0 0 30px 0;
+  }
+
+  /* Error 404 */
+
+  .error404 div h1 {
+    font-size: 45px;
+  }
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  
+  /* header */
+
+  .header_menu ul li {
+    margin-left: 8px;
+  }
+
+  .header_menu ul li a {
+    padding: 10px;
+  }
+
+  /* intro */
+
+  .intro div {
+    padding-top: 20.5%;
+  }
+
+  .intro h1 {
+    font-size: 60px;
+  }
+
+  .intro p {
+    font-size: 40px;
+  }
+
+  /* quem_somos */
+
+  .quem_somos {
+    height: auto;
+  }
+
+  .quem_somos .texto {
+    padding: 0px;
+    margin: 0 auto;
+    max-width: 650px;
+    top: 18px;
+  }
+
+  .quem_somos .texto h3 {
+    font-size: 45px;
+    text-align: center;
+    padding-bottom: 10px;
+  }
+
+  .quem_somos .texto p {
+    font-size: 25px;
+    padding-top: 7px;
+  }
+
+  .quem_somos .texto div {
+    margin-top: 13px;
+  }
+
+  .girl_quem_somos {
+    position: absolute; 
+    display: none;
+  }
+
+  .cloud_01_bottom {
+    bottom: 11%;
+  }
+
+  /* cursos */
+
+  .cursos {
+    padding: 60px 0;
+  }
+
+  .cursos .titulo {
+    font-size: 50px;
+  }
+
+  .descricao_curso {
+    padding: 16px 5px 0 5px;
+  }
+
+  .fundo_curso {
+    width: 70px;
+    height: 70px;
+  }
+
+  /* motivacao */
+
+  .motivacao {
+    padding: 40px 0;
+  }
+
+  .motivacao blockquote h2 {
+    font-size: 55px;
+  }
+
+  .motivacao blockquote p {
+    font-size: 30px;
+    padding-top: 25px;
+  }
+
+  /* contato */
+
+  .contato {
+    padding-top: 40px;
+    padding-bottom: 140px;
+  }
+
+  .contato h2 {
+    font-size: 50px;
+    padding-bottom: 10px;
+  }
+
+  .contato p {
+    font-size: 26px;
+    padding: 0 50px;
+  }
+
+  .contato p.second {
+    padding-top: 0;
+    padding-bottom: 20px;
+  }
+
+  .form input { 
+    border: 2px solid #FEBF20;
+    font-size: 21px;
+  }
+
+  .form textarea {
+    border: 2px solid #FEBF20;
+    padding: 4px 15px;
+    font-size: 21px;
+  }
+
+  /* footer */
+
+  .footer {
+    padding: 0 0 25px 0;
+  }
+
+  /* Error 404 */
+  
+  .error404 {
+    padding-top: 20%;
+  }
+
+  .error404 div h1 {
+    font-size: 40px;
+  }
+
+}
+
+@media only screen and (max-width: 767px) {
+  
+  /* header */
+
+  .header_logo {
+    margin-left: 20px;
+  }
+
+  .header_menu {
+    display: none;
+  }
+
+  /* menu hamburger */
+
+  .icon {
+    position: absolute;
+    top: 45%;
+    right: 0;
+    transform: translate(-50%, -50%);
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+  }
+
+  .hamburger {
+    width: 25px;
+    height: 3px;
+    background-color: #814B67;
+    position: absolute;
+    top: 60%;
+    right: -35%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 2px 5px rgba(0, 0, 0,.2);
+    transition: .5s;
+  }
+
+  .hamburger:before, .hamburger:after {
+    content: "";
+    position: absolute;
+    width: 25px; 
+    height: 3px;
+    background-color: #814B67;
+    box-shadow: 0 2px 5px rgba(0, 0, 0,.2);
+    transition: .5s;
+  } 
+
+  .hamburger:before {
+    top: -8px;
+  }
+
+  .hamburger:after {
+    top: 8px;
+  }
+
+  .icon.active .hamburger {
+    background-color: #F8F8F8;
+    box-shadow: 0 2px 5px #F8F8F8;
+  }
+
+  .icon.active .hamburger:before {
+    top: 0;
+    transform: rotate(45deg);
+  }
+
+  .icon.active .hamburger:after {
+    top: 0;
+    transform: rotate(135deg);
+  }
+
+  /* intro */
+
+  .intro {
+    height: 80%;
+    background: url("../images/intro-mobile.png") no-repeat center;
+    background-size: cover;
+  }
+
+  .intro div {
+    padding: 120px 0;
+  }
+
+  .intro h1 {
+    font-size: 38px;
+    line-height: 40px;
+  }
+
+  .intro p {
+    margin-top: 10px;
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  /* quem_somos */
+
+  .quem_somos {
+    height: auto;
+    padding: 50px 0 60px 0;
+  }
+
+  .quem_somos .texto {
+    padding-left: 10px;
+    top: 0;
+  }
+
+  .quem_somos .texto h3 {
+    font-size: 30px;
+    line-height: 40px;
+    text-align: center;
+    padding-bottom: 5px;
+  }
+
+  .quem_somos .texto p {
+    font-size: 20px;
+    line-height: 30px;
+    padding-top: 15px;
+  }
+
+  .quem_somos .texto div {
+    margin-top: 20px;
+  }
+
+  .girl_quem_somos {
+    position: absolute; 
+    display: none;
+  }
+
+  .cloud_01_bottom {
+    display: none;
+  }
+
+  /* cursos */
+
+  .cursos {
+    padding: 65px 0;
+  }
+
+  .cursos .titulo {
+    font-size: 30px;
+    line-height: 40px;
+    letter-spacing: 1px;
+  }
+
+  .cursos .titulo + .grade-curso {
+    padding-top: 30px;
+  }
+
+  .cursos .grade-curso.second {
+    padding-top: 0;
+  }
+
+  .fundo_curso {
+    width: 70px;
+    height: 70px;
+  }
+
+  .cursos .descricao_curso {
+    line-height: 20px;
+  }
+
+  /* motivacao */
+
+  .motivacao {
+    padding: 25px 0px;
+  }
+
+  .motivacao blockquote h2 {
+    font-size: 30px;
+  }
+
+  .motivacao blockquote p {
+    font-size: 20px;
+    padding-top: 20px;
+  }
+
+  /* contato */
+
+  .contato {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background: url("../images/intro-mobile.png") no-repeat center;
+    background-size: cover;
+  }
+
+  .contato h2 {
+    font-size: 32px;
+    letter-spacing: 1px;
+    padding-bottom: 10px;
+  }
+
+  .contato p {
+    font-size: 22px;
+    padding: 0 3px;
+  }
+
+  .contato p.second {
+    padding-top: 10px;
+    padding-bottom: 20px;
+  }
+
+  .contato button {
+    margin-top: 5px;
+  }
+
+  /* footer */
+
+  .footer {
+    padding: 30px 0 10px 0;
+    bottom: 0;
+  }
+
+  .footer .redes_sociais {
+    margin-bottom: 10px;
+  }
+
+  /* Error 404 */
+  
+  .error404 {
+    padding-top: 45%;
+  }
+
+  .error404 div {
+    padding: 0 30px;
+  }
+
+  .error404 div h1 {
+    font-size: 30px;
+  }
+
+}
