@@ -49,6 +49,8 @@ Meu portfólio com o CSS sendo refatorado para Mobile First e elementos com Flex
 git clone git@github.com:maxsueldev/portfolio2.0.git
 
 # entrar na pasta do projeto e abrir o arquivo index.html
+
+# Ou acessa-lo pelo endereço https://portfolio-one-ashen-57.vercel.app/
 ```
 
 <br>
