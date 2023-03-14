@@ -1,16 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
 
+:root {
+    --font: 'Tilt Neon', sans-serif;
+    --primary-color: #F4F7F6;
+    --secondary-color: #DC4F49;
+    --terciary-color: #092140;
+
+    --display-flex: flex;
+    --flex-column: column;
+}
+
 body, html {
     width: 100%;
     height: 100%;
-    font-family: 'Tilt Neon', sans-serif;
+    font-family: var(--font);
 }
 
 h1 {
     font-size: 32px;
     line-height: 35px;
     font-stretch: bold;
-    color: #F4F7F6;
+    color: var(--primary-color);
     margin: 0;
 }
 
@@ -26,8 +36,8 @@ h3 {
 }
 /* 
 .anim-typewriter {
-    display: flex;
-    flex-direction: column;
+    display: var(--display-flex);
+    flex-direction: var(--flex-column);
 } */
   
 p {
@@ -41,15 +51,15 @@ hr.separador {
 }
 
 hr.separador-laranja {  /* refatorar nome da classe */
-    background-color: #dc4f49;
+    background-color:  var(--secondary-color);
 }
 
 hr.separador-azul {  /* refatorar nome da classe */
-    background-color: #F4F7F6;
+    background-color: var(--primary-color);
 }
 
 .portfolio, .social-logo:hover {
-    background-color: #092140;
+    background-color: var(--terciary-color);
 }
 
 .scroll-downs {
@@ -70,7 +80,7 @@ hr.separador-azul {  /* refatorar nome da classe */
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    border: 3px solid #F4F7F6;
+    border: 3px solid var(--primary-color);
     border-radius: 23px;
 }
 .scroller {
@@ -81,7 +91,7 @@ hr.separador-azul {  /* refatorar nome da classe */
     width: 5px;
     height: 9px;
     margin: 1px 0 0 -3px;
-    background: #F4F7F6;
+    background: var(--primary-color);
     border-radius: 30%;
     -webkit-animation: scroll-ani 1.5s linear infinite;
     -moz-animation: scroll-ani 1.5s linear infinite;
@@ -124,8 +134,8 @@ hr.separador-azul {  /* refatorar nome da classe */
 
 .intro-container {
     height: 100%;
-    display: flex;
-    flex-direction: column;
+    display: var(--display-flex);
+    flex-direction: var(--flex-column);
     justify-content: center;
     align-items: center;
 }
@@ -163,7 +173,7 @@ to {
 .call-contato {
     font-size: 18px;
     color:rgba(255, 255, 255, .75);
-    border: 2px solid #F4F7F6;
+    border: 2px solid var(--primary-color);
     padding: 20px 30px;
 }
 
@@ -184,12 +194,12 @@ to {
 }
 
 .sobre-container {
-    display: flex; 
-    flex-direction: column;
+    display: var(--display-flex); 
+    flex-direction: var(--flex-column);
 }
 
 .sobre-top {
-    display: flex;
+    display: var(--display-flex);
     align-items: baseline;
 }
 
@@ -203,8 +213,8 @@ to {
 }
 
 .sobre-info-contact {
-    display: flex;
-    flex-direction: column;
+    display: var(--display-flex);
+    flex-direction: var(--flex-column);
     margin-bottom: 30px;
 }
 
@@ -224,7 +234,7 @@ to {
 }
 
 .portfolio-top {
-    display: flex;
+    display: var(--display-flex);
     align-items: baseline;
     margin-bottom: 26px;
 }
@@ -235,8 +245,8 @@ to {
 
 .pjt_reais, .templates-container {
     height: 100%;
-    display: flex;
-    flex-direction: column;
+    display: var(--display-flex);
+    flex-direction: var(--flex-column);
     text-align: center;
 }
 
@@ -264,9 +274,9 @@ to {
     display: block;
     outline: 0;
     font-size: 23px;
-    color: #092140;
-    background-color: #F4F7F6;
-    border: 2px solid #dc4f49;
+    color: var(--terciary-color);
+    background-color: var(--primary-color);
+    border: 2px solid  var(--secondary-color);
 }
 
 .contato {
@@ -274,7 +284,7 @@ to {
 }
 
 .contato-top {
-    display: flex;
+    display: var(--display-flex);
     align-items: baseline;
 }
 
@@ -284,9 +294,9 @@ to {
 .contato button {
     cursor: pointer;
     font-size: 18px;
-    color: #dc4f49;
-    background-color: #F4F7F6;
-    border: 2px solid #dc4f49;
+    color:  var(--secondary-color);
+    background-color: var(--primary-color);
+    border: 2px solid  var(--secondary-color);
     border-radius: 16px;
     padding: 12px 60px;
     margin: 15px 0 30px 0;
@@ -309,10 +319,10 @@ input, textarea {
 
 .footer {
     height: 40px;
-    display: flex;
+    display: var(--display-flex);
     justify-content: center;
     align-items: center;
-    background-color: #092140;
+    background-color: var(--terciary-color);
     padding: 40px 0 20px 0;
 }
 
@@ -321,7 +331,7 @@ input, textarea {
 }
 
 .footer img:hover {
-    background-color: #dc4f49;
+    background-color:  var(--secondary-color);
 }
 
 /*////////////////////////// PARA TABLETS //////////////////////////*/
@@ -358,12 +368,12 @@ input, textarea {
     }
 
     .intro-efect {
-        display: flex;
+        display: var(--display-flex);
         margin-top: 8px;
     }
 
     .projetos-flex {
-        display: flex;
+        display: var(--display-flex);
         flex-direction: row; 
     }
 }
