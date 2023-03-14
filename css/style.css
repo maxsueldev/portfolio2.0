@@ -2,9 +2,10 @@
 
 :root {
     --font: 'Tilt Neon', sans-serif;
-    --primary-color: #F4F7F6;
-    --secondary-color: #DC4F49;
-    --terciary-color: #092140;
+    --primary-color: #EDF1D6;
+    --secondary-color: #9DC08B;
+    --terciary-color: #609966;
+    --fourty-color: #40513B;
 
     --display-flex: flex;
     --flex-column: column;
@@ -146,14 +147,13 @@ hr.separador-azul {  /* refatorar nome da classe */
 
 .intro-container h3 {
     text-align: center;
-    color:rgba(255, 255, 255, .75);
+    color:var(--primary-color);
     margin: 24px auto;
-    border-right: 2px solid rgba(255, 255, 255, .75);
 }
 
 @keyframes blinkTextCursor {
     from {
-    border-right-color: rgba(255, 255, 255, .75);
+    border-right-color: var(--fourty-color);
 }
 to { 
     border-right-color: transparent;
@@ -172,7 +172,7 @@ to {
 
 .call-contato {
     font-size: 18px;
-    color:rgba(255, 255, 255, .75);
+    color:var(--primary-color);
     border: 2px solid var(--primary-color);
     padding: 20px 30px;
 }
