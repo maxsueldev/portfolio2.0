@@ -1,6 +1,10 @@
 $(document).ready(function () {
-	$(document).on("scroll", onScroll);
-
+    $(".iconHamburger").click(function() {
+        $(".iconHamburger, .headerMenu").toggleClass("active");
+    })
+    
+    $(document).on("scroll", onScroll);
+    
 	var headerHeight = $('header').outerHeight();
 	var navbarHeaderHeight = 0;
 
