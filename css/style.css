@@ -1,49 +1,28 @@
-@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+QLD+Beginner:wght@500&family=Montserrat&display=swap');
 
 :root {
-    --font: 'Tilt Neon', sans-serif;
-    --primary-color: #EDF1D6;
-    --secondary-color: #9DC08B;
-    --terciary-color: #609966;
-    --fourty-color: #40513B;
+    --primary-color: #2E4F4F;
+    --secundary-color: #2C3333;
+    --terciary-color: #0E8388;
+    --quarty-color: #CBE4DE;
+    --white-color: #F5F5F5;
+    --font-edu: "Edu QLD Beginner";
+    --font-montserrat: 'Montserrat', sans-serif;
 
     --display-flex: flex;
     --flex-column: column;
 }
 
-body, html {
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
     width: 100%;
     height: 100%;
-    font-family: var(--font);
-}
-
-h1 {
-    font-size: 32px;
-    line-height: 35px;
-    font-stretch: bold;
-    color: var(--primary-color);
-    margin: 0;
-}
-
-h2 {
-    font-size: 24px;
-    line-height: 30px;
-    letter-spacing: -2px;
-}
-
-h3 {
-    font-size: 20px;
-    line-height: 0px;
-}
-/* 
-.anim-typewriter {
-    display: var(--display-flex);
-    flex-direction: var(--flex-column);
-} */
-  
-p {
-      font-size: 16px;
-      line-height: 27px;
+    background-color: var(--secondary-color);
+    font-family: var(--font-montserrat);
 }
 
 hr.separador {  
@@ -51,145 +30,179 @@ hr.separador {
     margin: 20px 0 30px;
 }
 
-hr.separador-laranja {  /* refatorar nome da classe */
-    background-color:  var(--secondary-color);
-}
-
-hr.separador-azul {  /* refatorar nome da classe */
-    background-color: var(--primary-color);
-}
-
-.portfolio, .social-logo:hover {
+hr.separador-pri {  /* refatorar nome da classe */
     background-color: var(--terciary-color);
 }
 
-.scroll-downs {
-    position: absolute;
+hr.separador-seg {  /* refatorar nome da classe */
+    background-color: var(--quarty-color);
+}
+
+/* /////// ICON HAMBURGER ///////// */
+
+.iconHamburger {
+	position: absolute;
+	top: 20px;
     right: 0;
-    bottom: 23px;
-    left: 0;
-    margin: auto;
-    width: 25px;
-    height: 51px;
+	width: 80px;
+	height: 80px;
+	cursor: pointer;
+	transform: translate(-50%, -50%);
 }
-.mousey {
-    position: relative;
-    bottom: 0;
-    display: block;
-    width: 25px;
-    height: 37px;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    border: 3px solid var(--primary-color);
-    border-radius: 23px;
+
+.hamburger {
+	width: 35px;
+	height: 5px;
+	background-color: #FFFFFF;
+	position: absolute;
+	top: 75%;
+	right: 0;
+	transform: translate(-50%, -50%);
+	box-shadow: 0 2px 5px rgba(0, 0, 0,.2);
+	transition: .5s;
 }
-.scroller {
+
+.hamburger:before, .hamburger:after {
+	content: "";
+	position: absolute;
+	width: 35px; 
+	height: 5px;
+	background-color: #FFFFFF;
+	box-shadow: 0 2px 5px rgba(0, 0, 0,.2);
+	transition: .5s;
+} 
+
+.hamburger:before {
+	top: -12px;
+}
+
+.hamburger:after {
+	top: 12px;
+}
+
+.iconHamburger.active .hamburger {
+	background-color: rgba(0,0,0,0);
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0);
+}
+
+.iconHamburger.active .hamburger:before {
+	top: 0;
+	transform: rotate(45deg);
+}
+
+.iconHamburger.active .hamburger:after {
+	top: 0;
+	transform: rotate(135deg);
+}
+
+/* /////////////////////////////////////// HEADER //////////////////////////////////// */
+
+.header {
     position: absolute;
-    display: block;
-    top: 30%;
-    left: 55%;
-    width: 5px;
-    height: 9px;
-    margin: 1px 0 0 -3px;
-    background: var(--primary-color);
-    border-radius: 30%;
-    -webkit-animation: scroll-ani 1.5s linear infinite;
-    -moz-animation: scroll-ani 1.5s linear infinite;
-    animation: scroll-ani 1.5s linear infinite;
+    width: 100%;
+    display: flex;
+    flex-direction: var(--flex-column);
+    justify-content: space-between;
+    font-family: var(--font-edu);
+    font-size: 18px;
+    line-height: 15px;
+    height: 46px;   
+    color: var(--white-color);
+    background-color: var(--primary-color);
+    padding: 20px 0;
+    border: 3px solid #000000;
 }
 
-@-webkit-keyframes scroll-ani {
-    0%, 100% {
-    opacity: 1;
-    top: 20%}
-15%, 50% {
-    opacity: 1;
-    top: 37%}
-}@-moz-keyframes scroll-ani {
-    0%, 100% {
-    opacity: 1;
-    top: 20%}
-15%, 50% {
-    opacity: 1;
-    top: 37%}
-}@keyframes scroll-ani {
-    0%, 100% {
-    opacity: 1;
-    top: 20%}
-25%, 50% {
-    opacity: 1;
-    top: 37%}
+.headerInfo {
+    display: flex;
+    flex-direction: var(--flex-column);
+    gap: 5px;
+    padding-left: 30px;
 }
 
-/*////////////////////////// INTRO //////////////////////////*/
+.headerMenu {
+    display: none;
+    flex-direction: var(--flex-column);
+    gap: 35px;
+    align-items: flex-end;
+    /* justify-content: center;    */
+    background-color: var(--secundary-color);
+    z-index: 0;
+    padding: 25px 50px;
+    margin-top: 32px;
+}
+
+.headerMenu.active {
+    display: flex;
+    animation: fade-in 1.5s forwards;
+}
+
+.headerMenu a {
+    color: var(--white-color);
+    font-size: 26px;
+    line-height: 32px;
+    text-decoration: none;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    } 100% {
+        opacity: 1;
+    }
+}
+
+/* /////////////////////////////////////// INTRO //////////////////////////////////// */
 
 .intro {
+    background-color: var(--primary-color);
+	background-size: cover;
     width: 100%;
-    height: 100%;
-    min-height: 540px;
-    background: url(../img/intro/intro.png) no-repeat fixed;
-    background-size: cover;
-    overflow-x: hidden;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;  
+    justify-content: center;
+    color: var(--white-color);
+    text-align: center;
+    /* padding-top: 42%;   */
 }   
 
-.intro-container {
-    height: 100%;
-    display: var(--display-flex);
-    flex-direction: var(--flex-column);
+.intro h1 {
+    font-size: 36px;
+}
+
+.intro h3 {
+    font-size: 18px;
+    line-height: 26px;
+}
+
+.redes-sociais {
+    display: flex;
     justify-content: center;
-    align-items: center;
+    gap: 5px;
+    margin: 12px 0 40px 0;
 }
 
-.intro-efect {
-    padding-top: 12px;
-}
-
-.intro-container h3 {
-    text-align: center;
-    color:var(--primary-color);
-    margin: 24px auto;
-}
-
-@keyframes blinkTextCursor {
-    from {
-    border-right-color: var(--fourty-color);
-}
-to { 
-    border-right-color: transparent;
-}
-
-}.redes-sociais {
-    margin-bottom: 50px;
-}
-
-.social-logo {
-    border-radius: 50%;
+.redes-sociais img {
+    width: 36px;
     height: 36px;
-        width: 36px;
-    margin: 0 2px 20px 2px;
-}
+}   
 
 .call-contato {
     font-size: 18px;
-    color:var(--primary-color);
-    border: 2px solid var(--primary-color);
-    padding: 20px 30px;
+    font-weight: bold;
+    color: var(--white-color);
+    background-color: var(--primary-color);
+    text-decoration: none;
+    border: 3px solid #000000;
+    border-radius: 28px;
+    padding: 20px 22px;
 }
 
-.call-contato:hover {
-    font-weight: 700;
-    outline-color: rgba(255, 255, 255, 0);
-    outline-offset: 15px;
-}
-
-.icon_section {
-    margin-right: 6px;
-}
-
-/*////////////////////////// SOBRE //////////////////////////*/
+/* /////////////////////////////////////// SOBRE //////////////////////////////////// */
 
 .sobre {
+    background-color: var(--white-color);
     padding: 30px;
 }
 
@@ -203,19 +216,15 @@ to {
     align-items: baseline;
 }
 
-.section_head {
-    margin: 24px 0; 
-}
-
 .profissao-container {
-    line-height: 22px;
-    margin-bottom: 36px;
+    line-height: 14px;
+    margin-bottom: 30px;
 }
 
 .sobre-info-contact {
     display: var(--display-flex);
     flex-direction: var(--flex-column);
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 
 .sobre .texto {
@@ -223,14 +232,31 @@ to {
 }
 
 .sobre-info-contact h3 {
-    margin: 12px 0;
+    margin: 2px 0;
 }
 
-/*////////////////////////// PORTFOLIO //////////////////////////*/
+.maxsuel_img {
+    text-align: center;
+    margin-top: 18px;
+}
+
+.maxsuelfernando {
+    width: 50%;
+    height: 50%;
+}
+
+.containerEndSobre {
+    display: flex;  
+    flex-direction: column;
+    align-items: center;
+}
+
+/* ///////////////////////////////////// PORTFOLIO ///////////////////////////////// */
 
 .portfolio {
-    color: #f4f4f4;
-    padding: 30px;
+    color: var(--white-color);
+    background-color: var(--primary-color);
+    padding: 60px 30px;
 }
 
 .portfolio-top {
@@ -260,22 +286,21 @@ to {
 }
   
 .portfolio .pjt_title {
-    margin-bottom: 45px;
+    margin-bottom: 10px;
 }
 
 .projetos-flex a img {
     margin: 20px 0;
 }
 
-/*////////////////////////// CONTATO //////////////////////////*/
+/* /////////////////////////////// CONTATO //////////////////////// */
 
 .form input, .form textarea {
     width: 92%;
     display: block;
     outline: 0;
     font-size: 23px;
-    color: var(--terciary-color);
-    background-color: var(--primary-color);
+    background-color: var(--quarty-color);
     border: 2px solid  var(--secondary-color);
 }
 
@@ -294,8 +319,8 @@ to {
 .contato button {
     cursor: pointer;
     font-size: 18px;
-    color:  var(--secondary-color);
-    background-color: var(--primary-color);
+    color:  var(--terciary-color);
+    background-color: var(--quarty-color);
     border: 2px solid  var(--secondary-color);
     border-radius: 16px;
     padding: 12px 60px;
@@ -317,16 +342,20 @@ input, textarea {
     border-radius: 10px;
 }
 
+/* ///////////////////////////////// FOOTER //////////////////////////// */
+
 .footer {
     height: 40px;
     display: var(--display-flex);
     justify-content: center;
     align-items: center;
     background-color: var(--terciary-color);
-    padding: 40px 0 20px 0;
+    padding: 20px 0;
 }
 
 .footer img {
+    width: 60%;
+    height: 60%;
     margin-top: 25/px;
 }
 
@@ -337,43 +366,73 @@ input, textarea {
 /*////////////////////////// PARA TABLETS //////////////////////////*/
 
 @media (min-width: 834px) {
-   h1 {
-    font-size: 56px;
-    line-height: 40px;
+    .intro h1 {
+     font-size: 56px;
+     line-height: 40px;
+    }
+ 
+    .intro h3 {
+     font-size: 26px;
+     line-height: 30px;
+   }
+ 
+   .intro-funcao {
+     margin-top: 16px;
+   }
+ 
+   .sobre, .portfolio, .contato {
+     padding: 46px
    }
 
-   .intro h3 {
-    font-size: 26px;
-  }
+   .texto {
+        display: flex;
+        align-items: center;
+        gap: 25px;
+   }
 
-  .intro-efect {
-    margin-top: 16px;
-  }
+   .texto p {
+        font-size: 18px;
+    }
 
-  .sobre, .portfolio, .contato {
-    padding: 46px
-  }
-}
+   .maxsuelfernando {
+        width: 100%;
+        height: 100%;
+    }
+ }
+ 
+ /*////////////////////////// PARA TELAS MAIORES //////////////////////////*/
+ 
+ @media(min-width: 1040px) {
+    .header {
+        display: none;
+    }
 
-/*////////////////////////// PARA TELAS MAIORES //////////////////////////*/
-
-@media(min-width: 1040px) {
     .intro h1 {
         font-size: 72px;
     }
-
+ 
     .intro h3 {
         font-size: 26px;
         line-height: 6px;
     }
-
-    .intro-efect {
+ 
+    .intro-funcao {
         display: var(--display-flex);
-        margin-top: 8px;
+        justify-content: center;
+        margin: 30px 16px;
     }
 
+    .redes-sociais {    
+        gap: 14px;
+        margin: 12px 0 80px 0;
+    }
+
+    .texto p {
+        font-size: 22px;
+    }
+ 
     .projetos-flex {
         display: var(--display-flex);
         flex-direction: row; 
     }
-}
+ }
