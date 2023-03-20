@@ -53,7 +53,7 @@ hr.separador-seg {  /* refatorar nome da classe */
 .hamburger {
 	width: 35px;
 	height: 5px;
-	background-color: #FFFFFF;
+	background-color: var(--white-color);
 	position: absolute;
 	top: 75%;
 	right: 0;
@@ -67,7 +67,7 @@ hr.separador-seg {  /* refatorar nome da classe */
 	position: absolute;
 	width: 35px; 
 	height: 5px;
-	background-color: #FFFFFF;
+	background-color: var(--white-color);
 	box-shadow: 0 2px 5px rgba(0, 0, 0,.2);
 	transition: .5s;
 } 
@@ -84,7 +84,7 @@ hr.separador-seg {  /* refatorar nome da classe */
 	background-color: rgba(0,0,0,0);
 	box-shadow: 0 2px 5px rgba(0, 0, 0, 0);
 }
-
+    
 .iconHamburger.active .hamburger:before {
 	top: 0;
 	transform: rotate(45deg);
@@ -98,9 +98,9 @@ hr.separador-seg {  /* refatorar nome da classe */
 /* /////////////////////////////////////// HEADER //////////////////////////////////// */
 
 .header {
-    position: relative;
+    position: absolute;
     width: 100%;
-    display: flex;
+    display: var(--display-flex);
     flex-direction: var(--flex-column);
     justify-content: space-between;
     font-family: var(--font-edu);
@@ -114,7 +114,7 @@ hr.separador-seg {  /* refatorar nome da classe */
 }
 
 .headerInfo {
-    display: flex;
+    display: var(--display-flex);
     flex-direction: var(--flex-column);
     gap: 5px;
     padding-left: 30px;
@@ -133,7 +133,7 @@ hr.separador-seg {  /* refatorar nome da classe */
 }
 
 .headerMenu.active {
-    display: flex;
+    display: var(--display-flex);
     animation: fade-in 1.5s forwards;
 }
 
@@ -159,12 +159,13 @@ hr.separador-seg {  /* refatorar nome da classe */
 	background-size: cover;
     width: 100%;
     height: 100vh;
-    display: flex;
-    flex-direction: column;  
+    display: var(--display-flex);
+    flex-direction: var(--flex-column);   
     justify-content: center;
     color: var(--white-color);
     text-align: center;
     /* padding-top: 42%;   */
+    margin-top: 0;
 }   
 
 .intro h1 {
@@ -177,7 +178,7 @@ hr.separador-seg {  /* refatorar nome da classe */
 }
 
 .redes-sociais {
-    display: flex;
+    display: var(--display-flex);
     justify-content: center;
     gap: 5px;
     margin: 12px 0 40px 0;
@@ -246,8 +247,8 @@ hr.separador-seg {  /* refatorar nome da classe */
 }
 
 .containerEndSobre {
-    display: flex;  
-    flex-direction: column;
+    display: var(--display-flex);  
+    flex-direction: var(--flex-column);
     align-items: center;
 }
 
@@ -367,7 +368,7 @@ input, textarea {
  /* /////////////////////////CURRICULO ///////////////////////////////// */
 
  .apresentacao {
-    display: flex;
+    display: var(--display-flex);
     align-items: center;
     justify-content: space-between;
     line-height: 24px;
@@ -379,8 +380,8 @@ input, textarea {
 .apresentacao__conteudo {
     width: 100%;
     /* height: 482px; */
-    display: flex;
-    flex-direction: column;
+    display: var(--display-flex);
+    flex-direction: var(--flex-column);
     gap: 10px;
 }
 
@@ -390,63 +391,37 @@ input, textarea {
 
 .apresentacao__conteudo__titulo {
     font-size: 2.25rem;
-    font-family: var(--fonte-primaria);
+    line-height: 40px;
+    margin-top: 80px;
     margin-bottom: 20px;
 }
 
 .apresentacao__conteudo__texto {
     font-size: 1.5rem;
-    font-family: var(--fonte-secundaria);
 }
 
 .apresentacao__links__subtitulo {
-    font-family: var(--fonte-primaria);
     font-weight: 400;    
     font-size: 1.5rem;
 }
 
 .apresentacao__divLinks {
-    display: flex;
-    flex-direction: column;
+    display: var(--display-flex); 
+    flex-direction: var(--flex-column);
     justify-content: space-around;
     align-items: center;
     gap: 15px;
 }
 
-.apresentacao__botao {
-    width: 50%;
-    text-align: center;
-    font-size: 1.5rem;
-    font-weight: 600;
-    border-radius: 8px;
-    padding: 17px 0;
-    text-decoration: none;
-    color: var(--cor-secundaria);
-    font-family: var(--fonte-secundaria);
-    border: 2px solid #22D4FD;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 5px;
-}
-
-.apresentacao__botao:hover {
-    background-color: var(--cor-hover);
-}
-
-.apresentacao__imagem {
-    width:  50%;
-}
-
 .container__curriculo__lista {
-    display: flex;
-    flex-direction: column;
+    display: var(--display-flex);
+    flex-direction: var(--flex-column);
     gap: 30px;
 }
 
 .habilidades__container {
-    display: flex;
-    flex-direction: column;
+    display: var(--display-flex);
+    flex-direction: var(--flex-column);
     justify-content: space-around;
     gap: 25px;
 }
@@ -477,7 +452,7 @@ input, textarea {
    }
 
    .texto {
-        display: flex;
+        display: var(--display-flex);
         align-items: center;
         gap: 25px;
    }
@@ -489,6 +464,10 @@ input, textarea {
    .maxsuelfernando {
         width: 100%;
         height: 100%;
+    }
+
+    .apresentacao__conteudo__titulo {
+        margin-top: 70px;
     }
 
     .container__curriculo__lista {
@@ -545,5 +524,9 @@ input, textarea {
 
     .habilidades__container {
         gap: 300px;
+    }
+
+    .apresentacao__conteudo__titulo {
+        margin-top: 0;
     }
  }
