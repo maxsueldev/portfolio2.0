@@ -1,6 +1,6 @@
 $(document).ready(function () {
-    $(".iconHamburger").click(function() {
-        $(".iconHamburger, .headerMenu").toggleClass("active");
+    $(".iconHamburguer").click(function() {
+        $(".iconHamburguer, .headerMenu").toggleClass("active");
     })
     
     $(document).on("scroll", onScroll);
