@@ -394,4 +394,84 @@ hr.separador-seg { /* refatorar nome da classe */
 }
 .footer img:hover {
   background-color: #2C3333;
+}
+
+/* /////////////////////////CURRICULO ///////////////////////////////// */
+.apresentacao {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  line-height: 1.5em;
+  background-color: #2E4F4F;
+  color: #F5F5F5;
+  padding: 7%;
+}
+.apresentacao .apresentacao__conteudo {
+  width: 100%;
+  /* height: 482px; */
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.apresentacao .apresentacao__conteudo.apresentacao__conteudo__curriculo {
+  gap: 20px;
+}
+.apresentacao .apresentacao__conteudo .apresentacao__conteudo__titulo {
+  font-size: 2.25rem;
+  line-height: 40px;
+  margin-top: 80px;
+  margin-bottom: 20px;
+}
+@media (min-width: 1040px) {
+  .apresentacao .apresentacao__conteudo .apresentacao__conteudo__titulo {
+    margin-top: 0;
+  }
+}
+.apresentacao .apresentacao__conteudo .apresentacao__conteudo__texto {
+  font-size: 1.5rem;
+}
+.apresentacao .apresentacao__conteudo .apresentacao__lista {
+  display: flex;
+  flex-direction: column;
+}
+.apresentacao .apresentacao__conteudo .apresentacao__lista a {
+  text-decoration: none;
+  color: #F5F5F5;
+}
+.apresentacao .apresentacao__conteudo .container__curriculo__lista {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+@media (min-width: 834px) {
+  .apresentacao .apresentacao__conteudo .container__curriculo__lista {
+    flex-direction: row;
+    gap: 140px;
+  }
+}
+@media (min-width: 1040px) {
+  .apresentacao .apresentacao__conteudo .container__curriculo__lista {
+    gap: 240px;
+  }
+}
+.apresentacao .habilidades__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 25px;
+}
+@media (min-width: 834px) {
+  .apresentacao .habilidades__container {
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 200px;
+  }
+}
+@media (min-width: 1040px) {
+  .apresentacao .habilidades__container {
+    gap: 300px;
+  }
+}
+.apresentacao .descricao__exp__praticaSTI {
+  padding-left: 4%;
 }/*# sourceMappingURL=style.css.map */

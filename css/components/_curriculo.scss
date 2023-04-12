@@ -1,0 +1,80 @@
+@import '../abstract/variaveis';
+
+/* /////////////////////////CURRICULO ///////////////////////////////// */
+
+.apresentacao {
+    display: $display-flex;
+    align-items: center;
+    justify-content: space-between;
+    line-height: 1.5em;
+    background-color: $primary-color;
+    color: $white-color;
+    padding: 7%;
+    .apresentacao__conteudo {
+        width: 100%;
+        /* height: 482px; */
+        display: $display-flex;
+        flex-direction: $flex-column;
+        gap: 10px;
+        &.apresentacao__conteudo__curriculo {
+            gap: 20px;
+        }
+        .apresentacao__conteudo__titulo {
+            font-size: 2.25rem;
+            line-height: 40px;
+            margin-top: 80px;
+            margin-bottom: 20px;
+            @media (min-width: 1040px) {
+                margin-top: 0;        
+            }
+        }
+        .apresentacao__conteudo__texto {
+            font-size: 1.5rem;
+        }
+        .apresentacao__lista {
+            display: $display-flex;
+            flex-direction: column;
+            a {
+                text-decoration: none;
+                color: $white-color;
+            }
+        }
+        .container__curriculo__lista {
+            display: $display-flex;
+            flex-direction: $flex-column;
+            gap: 30px;
+            @media (min-width: 834px) {
+                flex-direction: row;
+                gap: 140px;
+            }
+            @media (min-width: 1040px) {
+                gap: 240px;
+            }
+        }
+    }
+    .habilidades__container {
+        display: $display-flex;
+        flex-direction: $flex-column;
+        justify-content: space-around;
+        gap: 25px;
+        @media (min-width: 834px) {
+            flex-direction: row;
+            justify-content: flex-start;
+            gap: 200px;
+        }
+        @media (min-width: 1040px) {
+            gap: 300px;
+        }
+    }
+    .descricao__exp__praticaSTI {
+        padding-left: 4%;
+    }
+}
+
+// .apresentacao__divLinks {
+//     display: var(--display-flex); 
+//     flex-direction: var(--flex-column);
+//     justify-content: space-around;
+//     align-items: center;
+//     gap: 15px;
+// }
