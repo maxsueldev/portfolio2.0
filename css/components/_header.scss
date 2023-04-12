@@ -1,0 +1,59 @@
+@import '../abstract/variaveis';
+
+/* /////////////////////////////////////// HEADER //////////////////////////////////// */
+.header {
+    position: absolute;
+    width: 100%;
+    display: $display-flex;
+    flex-direction: $flex-column;
+    justify-content: space-between;
+    font-family: $font-edu;
+    font-size: 1.1em;
+    line-height: .8em;
+    height: 2.6em;   
+    color: $white-color;
+    background-color: $terciary-color;
+    padding: 1.2em 0;
+    border: 3px solid #000000;
+    .headerInfo {
+        display: $display-flex;
+        flex-direction: $flex-column;
+        gap: 5px;
+        padding-left: 1.2em;
+    }
+    .headerMenu {
+        display: none;
+        flex-direction: $flex-column;
+        gap: 35px;
+        align-items: flex-end;
+        /* justify-content: center;    */
+        background-color: $primary-color;
+        z-index: 0;
+        padding: 1.5em 2em;
+        margin-top: 2em;
+        &.active {
+            display: $display-flex;
+            animation: fade-in 1.5s forwards;
+        }
+        a {
+            color: $white-color;
+            font-size: 1.6em;
+            line-height: 2em;
+            text-decoration: none;  
+        }
+    }
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    } 100% {
+        opacity: 1;
+    }
+}
+
+@media (min-width: 1040px) {
+    .header {
+        display: none;
+    }
+}

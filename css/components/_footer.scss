@@ -1,0 +1,22 @@
+@import '../abstract/variaveis';
+
+/* ///////////////////////////////// FOOTER //////////////////////////// */
+
+.footer {
+    height: 17%;
+    display: $display-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $terciary-color;
+    padding: 1.2em 0;
+
+    img {
+        width: 75%;
+        height: 75%;
+        /* margin-top: .1em; */
+        // margin-left: 2em 3;
+        &:hover {
+            background-color: $secundary-color;
+        }
+    }
+}

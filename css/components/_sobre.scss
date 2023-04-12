@@ -1,0 +1,61 @@
+@import '../abstract/variaveis';
+
+/* /////////////////////////////////////// SOBRE //////////////////////////////////// */
+
+.sobre {
+    background-color: $white-color;
+    padding: 2em;
+    .sobre-container {
+        display: $display-flex; 
+        flex-direction: $flex-column;
+        .sobre-top {
+            display: $display-flex;
+            align-items: baseline;
+        }
+        .profissao-container {
+            line-height: 1em;
+            margin-bottom: 2em;
+        }
+        .texto {
+            margin-bottom: 1.3em;
+            .maxsuel_img {
+                text-align: center;
+                margin-top: 1em;
+                .maxsuelfernando {
+                    width: 50%;
+                    height: 50%;
+                    @media (min-width: 834px) {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+            p {
+                @media(min-width: 834) {
+                    font-size: 1em;
+                }
+                @media(min-width: 1040px) {
+                    font-size: 1.2em;
+                }                
+            }
+            @media (min-width: 834px) {
+                display: $display-flex;
+                align-items: center;
+                gap: 25px;
+            }
+        }
+        .containerEndSobre {
+            display: $display-flex;  
+            flex-direction: $flex-column;
+            align-items: center;
+            .sobre-info-contact {
+                display: $display-flex;
+                flex-direction: $flex-column;
+                margin-bottom: 1em;
+                h3 {
+                    margin: .1em 0;
+                }                
+            }
+        }
+    }
+}

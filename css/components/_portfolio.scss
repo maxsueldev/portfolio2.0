@@ -1,0 +1,39 @@
+@import '../abstract/variaveis';
+
+/* ///////////////////////////////////// PORTFOLIO ///////////////////////////////// */
+
+.portfolio {
+    color: $white-color;
+    background-color: $primary-color;
+    padding: 4em 2em;
+    .portfolio-top {
+        display: $display-flex;
+        align-items: baseline;
+        margin-bottom: 1.5em;
+    }
+    .pjt_reais {
+        .pjt_title {
+            margin-bottom: .6em;        
+        }
+    }
+    .pjt_reais, .templates-container {
+        height: 100%;
+        display: $display-flex;
+        flex-direction: $flex-column;
+        text-align: center;
+        a {
+            margin: .4em 0;
+        }
+        img {
+            width: 80%;
+            height: 80%;
+            margin: 1.2em 0;
+        }
+        .projetos-flex {
+            @media(min-width:1040px) {
+                display: $display-flex;
+                flex-direction: row;
+            }
+        }
+    }
+}

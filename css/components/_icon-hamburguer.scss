@@ -1,0 +1,52 @@
+/* /////// ICON HAMBURGUER ///////// */
+
+.iconHamburguer {
+	position: absolute;
+	top: 22%;
+    right: 0;
+	width: 1.3em;
+	height: 5em;
+	cursor: pointer;
+	transform: translate(-50%, -50%);
+    .hamburguer {
+        width: 2em;
+        height: .25em;
+        background-color: $white-color;
+        position: absolute;
+        top: 75%;
+        right: 0;
+        transform: translate(-50%, -50%);
+        box-shadow: 0 2px 5px rgba(0, 0, 0,.2);
+        transition: .5s;
+        &:before, &:after {
+            content: "";
+            position: absolute;
+            width: 2em; 
+            height: .25em;
+            background-color: $white-color;
+            box-shadow: 0 2px 5px rgba(0, 0, 0,.2);
+            transition: .5s;
+        }
+        &:before {
+            top: -12px;
+        } 
+        &:after {
+            top: 12px;
+        }
+    }
+}
+
+.iconHamburguer.active {
+    .hamburguer {
+        background-color: rgba(0,0,0,0);
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0);
+        &:before {
+            top: 0;
+            transform: rotate(45deg);
+        }
+        &:after {
+            top: 0;
+            transform: rotate(135deg);
+        }
+    }
+}
