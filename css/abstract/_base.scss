@@ -7,12 +7,20 @@ body {
     width: 100%;
     height: 100%;
     background-color: $secundary-color;
-    font-family: $font-montserrat;
+    font-family: $font-tilt-neon, sans-serif;
+}
+
+h2 {  // Título em cada sessão
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.2em;
 }
 
 hr.separador {  
     height: .1em;
-    margin: 1em 0 2em;
+    margin: 1em 0 2em 0;
 }
 
 hr.separador-pri {  /* refatorar nome da classe */

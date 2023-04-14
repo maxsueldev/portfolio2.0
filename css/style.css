@@ -29,12 +29,20 @@ body {
   width: 100%;
   height: 100%;
   background-color: #2C3333;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Tilt Neon", sans-serif;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 1.2em;
 }
 
 hr.separador {
   height: 0.1em;
-  margin: 1em 0 2em;
+  margin: 1em 0 2em 0;
 }
 
 hr.separador-pri { /* refatorar nome da classe */
@@ -246,17 +254,27 @@ hr.separador-seg { /* refatorar nome da classe */
 .sobre .sobre-container .sobre-top {
   display: flex;
   align-items: baseline;
+  margin: 1em 0;
 }
 .sobre .sobre-container .profissao-container {
-  line-height: 1em;
-  margin-bottom: 2em;
+  line-height: 1.8em;
+  margin-bottom: 1.6em;
 }
 .sobre .sobre-container .texto {
-  margin-bottom: 1.3em;
+  margin-bottom: 0.6em;
+  line-height: 1.5em;
+}
+@media (min-width: 834px) {
+  .sobre .sobre-container .texto {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin-bottom: 2em;
+  }
 }
 .sobre .sobre-container .texto .maxsuel_img {
   text-align: center;
-  margin-top: 1em;
+  margin-top: 2em;
 }
 .sobre .sobre-container .texto .maxsuel_img .maxsuelfernando {
   width: 50%;
@@ -268,7 +286,7 @@ hr.separador-seg { /* refatorar nome da classe */
     height: 100%;
   }
 }
-@media (min-width: 834) {
+@media (min-width: 834px) {
   .sobre .sobre-container .texto p {
     font-size: 1em;
   }
@@ -276,13 +294,6 @@ hr.separador-seg { /* refatorar nome da classe */
 @media (min-width: 1040px) {
   .sobre .sobre-container .texto p {
     font-size: 1.2em;
-  }
-}
-@media (min-width: 834px) {
-  .sobre .sobre-container .texto {
-    display: flex;
-    align-items: center;
-    gap: 25px;
   }
 }
 .sobre .sobre-container .containerEndSobre {
@@ -293,7 +304,6 @@ hr.separador-seg { /* refatorar nome da classe */
 .sobre .sobre-container .containerEndSobre .sobre-info-contact {
   display: flex;
   flex-direction: column;
-  margin-bottom: 1em;
 }
 .sobre .sobre-container .containerEndSobre .sobre-info-contact h3 {
   margin: 0.1em 0;
@@ -303,12 +313,12 @@ hr.separador-seg { /* refatorar nome da classe */
 .portfolio {
   color: #F5F5F5;
   background-color: #2E4F4F;
-  padding: 4em 2em;
+  padding: 2em;
 }
 .portfolio .portfolio-top {
   display: flex;
   align-items: baseline;
-  margin-bottom: 1.5em;
+  margin: 1em 0;
 }
 .portfolio .pjt_reais .pjt_title {
   margin-bottom: 0.6em;
@@ -387,13 +397,10 @@ hr.separador-seg { /* refatorar nome da classe */
   background-color: #0E8388;
   padding: 1.2em 0;
 }
-.footer img {
-  width: 75%;
-  height: 75%;
+.footer a img {
+  width: 60%;
+  height: 60%;
   /* margin-top: .1em; */
-}
-.footer img:hover {
-  background-color: #2C3333;
 }
 
 /* /////////////////////////CURRICULO ///////////////////////////////// */

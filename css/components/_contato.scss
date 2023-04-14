@@ -4,7 +4,7 @@
 
 .contato {
     background-color: $white-color;
-    padding: 2em;
+    padding: $padding-sessao;
     .contato-top {
         display: $display-flex;
         align-items: baseline;
